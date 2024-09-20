@@ -1,25 +1,21 @@
-import React  from "react";
+import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Grocerry from "./ Grocerry";
-import Apical from "./component/Apical"
-import Ma from "./component/Ma";
-import AnimalPark from "./component/AnimalsPark";
-
-function App (){
-  
-    
+import Hello from "./component/Hello";
 
 
-return(
-    <>
-{/* <Apical/> */}
-{/* <Grocerry/> */}
-{/* <Ma/> */}
-<AnimalPark/>
-</>
+function App() {
 
-)
+
+
+
+    return (
+        <>
+        <Hello/>
+        
+        </>
+
+    )
 
 
 }
