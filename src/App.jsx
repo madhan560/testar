@@ -1,7 +1,9 @@
 import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Hello from "./component/Hello";
+// import Hello from "./component/Hello";
+import Ma from "./component/Ma";
+// import Animals from "./component/Animals";
 
 
 function App() {
@@ -11,7 +13,10 @@ function App() {
 
     return (
         <>
-        <Hello/>
+        {/* <Hello/> */}
+        <Ma/>
+        {/* <Animals/> */}
+
         
         </>
 

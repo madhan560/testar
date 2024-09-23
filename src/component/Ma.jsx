@@ -47,6 +47,8 @@ handlefetch()
       {data.map((da)=>(
         <div>
             <h1>{da.Ma}</h1>
+            <button>Edit</button>
+            <button>Delete</button>
         </div>
       ))}
       <button onClick={handlepost}>click</button>

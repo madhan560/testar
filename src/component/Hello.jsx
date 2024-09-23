@@ -18,7 +18,7 @@ function Hello (){
     useEffect(()=>{
 
         handlefetch()
-    })
+    });
 
 
     return(
