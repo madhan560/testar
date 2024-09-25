@@ -12,7 +12,9 @@ function AnimalsPark(){
 
     let seenu = await axios.get ("http://localhost:3000/todoList");
 
-    setdata(seenu.data);
+    setdata(seenu.data)
+
+    // dhshdhjas
 
 
 
