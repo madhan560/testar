@@ -1,33 +1,40 @@
-import React, { useEffect, useState } from "react";
+import axios from "axios";
+import React from "react";
+
 
 function AnimalsPark(){
 
-  const [data,setdata] = useState([]);
+  const [data,setdata] = useState([])
+
+
+
+  const handlefetch = async () =>{
+
+    let seenu = await axios.get ("http://localhost:3000/todoList");
+
+    setdata(seenu.data);
+
+
+
+  };
 
 
   useEffect(()=>{
-    handlfetch()
+    handlefetch()
   },[]);
-  
-  const handlfetch = async () =>{
 
-    var name = await axios.get ("http://localhost:3000/todoList");
-
-    setdata(name.data);
-  };
 
   return(
-   <>
-    <h1>Hello world..</h1>
-    <input type="text" placeholder="This is a Your Jurrasic park world" />
-    <button>Animals</button>
-    {data.map((boo)=>(
+    
+    <>
+    <h1>Hello world....</h1>
+    <input type="text" placeholder="Jurrassic World" />
+    <button>Submit</button>
+    {data.map((item)=>(
       <div>
-        <h1>{boo.Animals}</h1>
+        <h1>{item.Animals}</h1>
       </div>
     ))}
-
-
     </>
   )
 }
